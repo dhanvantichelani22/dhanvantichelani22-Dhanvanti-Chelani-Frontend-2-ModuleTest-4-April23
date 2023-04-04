@@ -1,0 +1,106 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    
+}
+.input-container input{
+    background-color: black;
+    border: 1px solid gray;
+    width: 100%;
+    color: white;
+    font-size: medium;
+    height: 35px;
+}
+.input-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 1fr; */
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+    /* row-gap: 50px; */
+    gap: 20px;
+    padding: 0;
+}
+
+.container{
+    margin: 20px 50px;
+}
+table{
+    width: 100%;
+    border: 1px solid grey;
+     border-spacing: 0px; /* no spacing in <th>  */
+    font-size: medium;
+     min-height: 200px;/* 1details space */
+    background-color: black;
+    /* overflow-x: auto; */
+    color: white;
+}
+th td{
+    text-align: center;
+}
+th{
+    border-bottom: 1px solid grey;
+    border-right:1px solid grey;
+    padding: 8px;
+}
+td{
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+tbody{
+    height: auto;
+}
+
+.search{
+    width:100%;
+    background-color: black;
+    border: 1px solid lightgray;
+    height: 35px;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+    color: lightgrey;
+}
+.button :hover{
+    cursor: pointer;
+}
+.button button{
+    width:35%;
+    margin-top: 25px;
+    border: 1px solid lightgray;
+    height: 35px;
+    background-color: white; 
+    font-weight: bold; 
+    margin: 40px 40px 40px 0px;
+    
+}
+/* For screens smaller than 800px */
+@media (max-width: 800px) {
+    /* CSS styles here */
+    body {
+      font-size: 14px;
+    }
+    .container {
+      margin: 10px;
+      overflow-x: hidden;
+    }
+    .input-container {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 10px;
+    }
+    .input-container input {
+      width: 100%;
+    }
+    .table {
+      font-size: 10px;
+    }
+    .search, .button button {
+      width: 100%;
+      margin: 10px 0px;
+    }
+}
